@@ -5,9 +5,10 @@ A CA and some pregenerated test certs. These are not secure but are useful for t
 
 Works on any system with a bash shell and openssl cli tool installed.
 
-~~Bold marks user interaction points~~ 
+**Bold marks user interaction points**
 
-[dev:simple-ca-certs]# ./sign_cert_csr.sh ~~testcert3~~
+```
+[dev:simple-ca-certs]# ./sign_cert_csr.sh **testcert3**
 Generating RSA private key, 2048 bit long modulus
 ...................................+++
 ...............................+++
@@ -25,7 +26,7 @@ Locality Name (eg, city) [San Jose]:
 Organization Name (eg, company) [Super Certs]:
 Second Organization Name (eg, company) [Certificate Department]:
 Organizational Unit Name (eg, section) [Certificate Management Unit]:
-Common Name (eg, YOUR name) []:~~food.goo.com~~
+Common Name (eg, YOUR name) []:**food.goo.com**
 Email Address []:
 Using configuration from ./ca/openssl.cnf
 Check that the request matches the signature
@@ -56,9 +57,10 @@ Certificate Details:
                 serial:BA:29:A0:74:86:2B:62:8C
 
 Certificate is to be certified until Feb  1 05:08:38 2836 GMT (300000 days)
-Sign the certificate? [y/n]:~~y~~
+Sign the certificate? [y/n]:**y**
 
 
-1 out of 1 certificate requests certified, commit? [y/n]~~y~~
+1 out of 1 certificate requests certified, commit? [y/n]**y**
 Write out database with 1 new entries
 Data Base Updated
+```
